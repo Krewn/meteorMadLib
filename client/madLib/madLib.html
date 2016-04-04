@@ -1,20 +1,47 @@
-<head>
-	
-</head>
 <body id="body">
 	<div class="containter-fluid" id="mainContainer">
-		<div class="row" id = "headerCol">
+		<div class="row margin-top-lg" id="headerCol">
 			<div class="col-xs-12 text-center" id="headerDiv">
 				<h1 id="header-text">Create your Mad Lib below!</h1>
 			</div>
 		</div>
-		<div class ="row" id = "secondRow">
-			<div class = "col-xs-8 col-xs-offset-2" id = "formCol">
-				<div class="form-group text-center" id = "formDiv">
-					<label for="usr" class="control-lable col-xs-2" id = "usrLable">Exclaimation:</label>
-						<input type="text" class="form-control" id="usr">
-					<button class = "btn btn-default" id = "submit">Generate</button>
-				</div>
+		<div class="row margin-top-lg" id="secondRow">
+			<div class="col-xs-8 col-xs-offset-2" id="formCol">
+				<form class="form-horizontal">
+					<div class="form-group" id="formDiv">
+						<label for="exc" class="col-xs-2 control-label" id="excLabel">Exclamation:</label>
+						<div class="col-xs-10">
+							<input type="text" class="form-control" id="exc" name="exclamation" placeholder="Hooray, Egads, Shazbot ..." />
+						</div>
+					</div>
+					
+					<div class="form-group" id="formDiv">
+						<label for="adv" class="col-xs-2 control-label" id="advLabel">Adverb:</label>
+						<div class="col-xs-10">
+							<input type="text" class="form-control" id="adv" name="adverb" />
+						</div>
+					</div>
+					
+					<div class="form-group" id="formDiv">
+						<label for="ani" class="col-xs-2 control-label" id="aniLabel">Animal:</label>
+						<div class="col-xs-10">
+							<input type="text" class="form-control" id="ani" name="animal" />
+						</div>
+					</div>
+					
+					<div class="form-group" id="formDiv">
+						<label for="vrb" class="col-xs-2 control-label" id="vrbLabel">Verb:</label>
+						<div class="col-xs-10">
+							<input type="text" class="form-control" id="vrb" name="verb" />
+						</div>
+					</div>
+					
+					<div class="form-group" id="formDiv">
+						<div class="col-xs-offset-2 col-xs-10">
+							<button class="btn btn-default" id="submitButton">Generate</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
