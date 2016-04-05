@@ -1,11 +1,20 @@
 <head>
 	
 </head>
-<body>
-	<div class="containter-fluid">
-		<div class="row">
-			<div class="col-xs-12 text-center">
+<body id="body">
+	<div class="containter-fluid" id="mainContainer">
+		<div class="row" id = "headerCol">
+			<div class="col-xs-12 text-center" id="headerDiv">
 				<h1 id="header-text">Create your Mad Lib below!</h1>
+			</div>
+		</div>
+		<div class ="row" id = "secondRow">
+			<div class = "col-xs-8 col-xs-offset-2" id = "formCol">
+				<div class="form-group text-center" id = "formDiv">
+					<label for="usr" class="control-lable col-xs-2" id = "usrLable">Exclaimation:</label>
+						<input type="text" class="form-control" id="usr">
+					<button class = "btn btn-default" id = "submit">Generate</button>
+				</div>
 			</div>
 		</div>
 	</div>
