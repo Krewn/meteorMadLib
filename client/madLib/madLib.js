@@ -5,6 +5,11 @@ Template.body.events({
 		var adv = event.target.adverb.value;
 		var ani = event.target.animal.value;
 		var vrb = event.target.verb.value;
-		console.log('\'' + exc + '!\' you say, as you ' + adv + ' jump onto your ' + ani + ' and ' + vrb + ' into the sunset.');
+		var result = '\'' + exc + '!\' you say, as you ' + adv + ' jump onto your ' + ani + ' and ' + vrb + ' into the sunset.';
+		console.log(result);
+		$('#result').text(result);
+		$('#result').css("color","#0000FF");
+		$('#result').hide();
+		$('#result').fadeIn("slow");
 	}
 });
